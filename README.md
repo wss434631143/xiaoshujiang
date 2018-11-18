@@ -6,7 +6,7 @@
 ### 创建一个仓库并初始化
 - Github右上角点击"+"->"New repository"
 
-![1](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181118/1542530371232.png)
+![1](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181118/1542532752264.png)
 - "Repository name"->"xiaoshujiang"(自定义),"Description (optional)"->"小书匠编写的文章的github图床和文章"
 - 勾选"Initialize this repository with a README",然后点击"Create repository"
 
