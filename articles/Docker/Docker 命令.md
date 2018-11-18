@@ -63,8 +63,10 @@ docker image pull 子命令：
 ``` shell
 # 删除一个镜像
 docker image rm <镜像 ID>
+
 # 删除多个镜像(中间用空格隔开)
 docker image rm <镜像 ID> <镜像 ID> <...>
+
 # 批量删除本机所有镜像
 docker image rm $(docker image ls -a -q)
 ```
