@@ -304,6 +304,9 @@ docker container top <容器名或ID>
 docker container cp <容器名或ID>:/container_path to_path
 ```
 
+## 有图有真相(docker event state)
+![](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542563245422.png)
+
 ## 参考资料
 
 docker简单使用 - CSDN博客
@@ -317,3 +320,6 @@ https://blog.csdn.net/we_shell/article/details/38368137
 
 Docker的学习--命令使用详解 - 疯狂的原始人 - 博客园
 http://www.cnblogs.com/CraryPrimitiveMan/p/4657835.html
+
+Docker - 简书
+https://www.jianshu.com/p/1ee42024b97c
