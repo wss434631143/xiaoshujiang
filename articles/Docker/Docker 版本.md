@@ -23,4 +23,4 @@
 
 **参考资料**
 
-    [http://dockone.io/article/2128](http://dockone.io/article/2128)
+[http://dockone.io/article/2128](http://dockone.io/article/2128)
