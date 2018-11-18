@@ -34,9 +34,12 @@ docker search <镜像名>
 ``` shell
 docker image ls
 ```
-docker image ls
+docker image ls 子命令
+
 -a, --all：显示所有镜像
+
 -q, --quiet：只显示镜像ID
+
 --no-trunc：不截断输出
 
 
