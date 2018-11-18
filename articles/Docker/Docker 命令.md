@@ -5,12 +5,6 @@ weblog_mt_keywords: "docker"
 
 ## docker 命令
 
-### 搜索 docker 镜像
-
-``` shell
-docker search <镜像名>
-```
-
 ### 查看 docker 版本
 
 ``` shell
@@ -23,14 +17,15 @@ docker version
 docker info
 ```
 
-
-## docker image 命令
-
-### 搜索镜像
+### 搜索 docker 镜像
 
 ``` shell
 docker search <镜像名>
 ```
+
+
+## docker image 命令
+
 
 ### 下载镜像
 
