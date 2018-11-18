@@ -75,6 +75,9 @@ docker image rm <镜像 ID> <镜像 ID> <...>
 docker image rm $(docker image ls -a -q)
 ```
 
+docker image rm 子命令：
+-f, --force：强制删除
+
 ### 给镜像打上标签
 
 ``` shell
