@@ -75,7 +75,7 @@ docker image rm <镜像 ID> <镜像 ID> <...>
 docker image rm $(docker image ls -a -q)
 ```
 
-给镜像打上标签
+### 给镜像打上标签
 
 ``` shell
 docker image tag <镜像名> <标签名>
@@ -92,24 +92,33 @@ docker image tag <镜像名> <标签名>
 docker container ls
 ```
 
-docker container ls子命令：
+docker container ls 子命令：
 -a, --all：显示所有容器，包括没有在运行的
 -q, --quiet：只显示容器ID
 --no-trunc：不截断输出
 
-后台启动容器
-docker container run -d <镜像名或ID> 
+### 启动容器
 
+``` shell
+docker container run <镜像名或ID> 
+```
+docker container run 子命令：
+--name <容器名>：给容器起个名字
 
+-d, --detach：在后台运行容器
 
+-i, --interactive：表示让容器的标准输入打开
 
-启动容器
-docker run --name <容器名>  <镜像名>
+-t, --tty：表示分配一个伪终端
 
-容器后台运行
-docker run -d --name <容器名>  <镜像名>
+-p, --publish list：将容器的端口发布到主机
 
+--rm
+
+``` shell
+# 示例
 docker run -d -it -p 8080:8080 tomcat
+```
 
 -d:表示后台运行
 -i:表示让容器的标准输入打开
