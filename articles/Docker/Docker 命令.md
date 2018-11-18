@@ -11,6 +11,7 @@ weblog_mt_keywords: "docker"
 docker search <镜像名>
 ```
 
+
 ## docker image 命令
 
 ### 获取镜像
@@ -29,11 +30,19 @@ pull子命令： -a,--all-tags=true|false：是否获取仓库中所有版本镜
 
 ### 查看本地镜像
 
-docker images
+``` shell
+docker image ls
+```
+
+
+## docker container 命令
+
+``` shell
+docker container ls
+```
 
 后台启动容器
-docker run -d <镜像名或ID> 
-docker ps
+docker container run -d <镜像名或ID> 
 
 给镜像打上标签
 docker tag <镜像名> <标签名>
