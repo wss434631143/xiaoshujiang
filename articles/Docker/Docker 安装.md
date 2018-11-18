@@ -30,13 +30,14 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ## 使用 yum 安装
 
 -使用 CentOS-Extras yum源安装
-对于CentOS 7 系统，Docker 软件包和依赖包已经包含在默认的 CentOS-Extras 软件源里，可以直接yum命令安装,但是版本较低
+对于CentOS 7 系统，Docker 软件包和依赖包已经包含在默认的 CentOS-Extras 软件源里，可以直接yum命令安装,但是版本较低,不推荐。
 
 ``` shell
 # 使用默认CentOS-Extras 软件源安装docker
 yum install -y docker
 ```
-- 使用Docker 阿里云yum源安装
+- 使用Docker 官方yum源安装
+**此处使用的是阿里云的yum源（和官方保持同步的，碎度快），推荐使用**
 
 ``` shell
 # step 1: 安装必要的一些系统工具
