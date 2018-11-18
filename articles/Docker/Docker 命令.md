@@ -26,7 +26,7 @@ docker search <镜像名>
 ### 获取容器/镜像的元数据
 
 ``` shell
- docker inspect <容器名或ID>
+ docker inspect <容器名或ID或镜像名>
 ```
 
 ----------
