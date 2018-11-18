@@ -1,3 +1,8 @@
+---
+title: Docker 版本 
+weblog_mt_keywords: "docker"
+---
+
 > 长话短说：现在Docker改为基于YY.MM的版本（像Ubuntu），用户可以选择Stable（发布较慢）或者Edge（发布较快）版本。
 
 - Docker Engine改为Docker CE（社区版） 
