@@ -29,9 +29,14 @@ ExecStart=/usr/bin/dockerd --registry-mirror=http://hub-mirror.c.163.com
 以上操作后重启一下docker
  systemctl restart docker 
  
- 
+
+## 参考资料
+
 国内 docker 仓库镜像对比
 https://ieevee.com/tech/2016/09/28/docker-mirror.html
 
 查找最快的docker镜像
 https://github.com/silenceshell/docker_mirror
+
+Docker - 配置国内加速器加速镜像下载。 - TonyZhang24 - 博客园
+https://www.cnblogs.com/atuotuo/p/6264800.html
