@@ -75,6 +75,9 @@ systemctl enable docker.service
 
 ## 参考资料
 
+阿里巴巴开源镜像站
+https://opsx.alibaba.com/mirror?lang=zh-CN
+
 Docker CE 镜像源站-博客-云栖社区-阿里云
 https://yq.aliyun.com/articles/110806
 
