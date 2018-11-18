@@ -77,6 +77,12 @@ docker image pull 子命令：
 
 -a,--all-tags=true|false：是否获取仓库中所有版本镜像，默认为否。
 
+### 发布镜像
+
+``` shell
+docker image push <镜像名>[:标签(往往用来表示版本信息)]
+```
+
 ### 删除一个或多个镜像
 
 ``` shell
