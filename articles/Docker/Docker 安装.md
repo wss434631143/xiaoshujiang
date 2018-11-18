@@ -11,7 +11,7 @@ Docker 要求 CentOS 系统的内核版本高于 3.10 且是64位操作系统
 uname -r
 ```
 
-## 脚本安装Docker（此方法安装的版本比较新）
+## 脚本安装Docker
 运行Docker安装脚本
 
 ``` shell
