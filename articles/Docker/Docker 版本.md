@@ -6,21 +6,21 @@
 
 - Docker Data Center改为Docker EE（企业版） 
 
-在Docker三个定价层增加了额外的[支付产品和支持](https://store.docker.com/search?offering=enterprise&type=edition)
+    在Docker三个定价层增加了额外的[支付产品和支持](https://store.docker.com/search?offering=enterprise&type=edition)
 
 - 这些修改并不影响Docker Compose以及Docker Machine
 
 - Docker版本现在基于YY.MM 
 
-使用基于月份的发行版本，17.03 的第一版就指向17.03.0，如果有bug/安全修复需要发布，那么将会指向17.03.1等等。
+    使用基于月份的发行版本，17.03 的第一版就指向17.03.0，如果有bug/安全修复需要发布，那么将会指向17.03.1等等。
 
 - "Edge"与"Stable"两个版本发行
 
-Edge版本每月发布，提供一个月支持。
-Stable版本每季度发布，提供4个月支持。
-你可以通过 [Docker EE](https://store.docker.com/search?offering=enterprise&type=edition) 订阅 延长Stable版本支持以及补丁修复。
-![](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181118/1542537475839.png)
+    Edge版本每月发布，提供一个月支持。
+    Stable版本每季度发布，提供4个月支持。
+    你可以通过 [Docker EE](https://store.docker.com/search?offering=enterprise&type=edition) 订阅 延长Stable版本支持以及补丁修复。
+    ![](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181118/1542537475839.png)
 
 **参考资料**
 
-[http://dockone.io/article/2128](http://dockone.io/article/2128)
+    [http://dockone.io/article/2128](http://dockone.io/article/2128)
