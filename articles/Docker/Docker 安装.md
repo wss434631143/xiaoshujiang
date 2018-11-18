@@ -15,7 +15,8 @@ uname -r
 运行Docker安装脚本
 
 ``` shell
-curl -fsSL https://get.docker.com/ | sh 或者
+curl -fsSL https://get.docker.com/ | sh 
+# 或者
 wget -qO- https://get.docker.com/ | sh
 ```
 
