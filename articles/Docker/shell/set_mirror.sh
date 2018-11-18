@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# 该脚本可以将 --registry-mirror 加入到你的 Docker 配置文件 /etc/docker/daemon.json 中。适用于 Ubuntu14.04、Debian、CentOS6 、CentOS7、Fedora、Arch Linux、openSUSE Leap 42.1，其他版本可能有细微不同。更多详情请访问文档。
+# 使用方法：curl -sSL https://raw.githubusercontent.com/wss434631143/xiaoshujiang/master/articles/Docker/shell/set_mirror.sh | sh -s <your accelerate address>
 set -e
 
 if [ -z "$1" ]
