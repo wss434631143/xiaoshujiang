@@ -37,6 +37,7 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 yum install -y docker
 ```
 - 使用 Docker 官方yum源安装
+
 **此处使用的是阿里云的yum源（和官方保持同步的，碎度快），推荐使用**
 
 ``` shell
