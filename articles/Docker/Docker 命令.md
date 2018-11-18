@@ -49,8 +49,12 @@ docker image ls 子命令：
 
 ``` shell
 docker image pull <镜像名>[:标签(往往用来表示版本信息)]
-# 例如：
+```
+
+
+``` shell
 docker image pull ubuntu:14.04
+
 docker image pull hub.c.163.com/public/ubuntu:14.04
 ```
 
