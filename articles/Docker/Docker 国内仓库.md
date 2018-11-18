@@ -58,7 +58,7 @@ vim /usr/lib/systemd/system/docker.service
 ExecStart=/usr/bin/dockerd --registry-mirror=<your accelerate address>
 ```
 
-以上操作后重启一下docker
+以上操作后重启一下 Docker
 
 ``` shell
 sudo systemctl daemon-reload
