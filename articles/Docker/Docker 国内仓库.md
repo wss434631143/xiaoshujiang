@@ -1,11 +1,11 @@
 ---
-title: Docker 国内仓库
+title: Docker 国内仓库和镜像
 weblog_mt_keywords: "Docker"
 ---
 
 > 由于网络原因，我们在pull Image 的时候，从Docker Hub上下载会很慢。。。所以，国内的Docker爱好者们就添加了一些国内的镜像（mirror）,方便大家使用。
 
-## 国内仓库
+## 国内 Docker 仓库
 
 [阿里云](https://dev.aliyun.com/search.html)
 
@@ -13,10 +13,8 @@ weblog_mt_keywords: "Docker"
 
 [时速云](https://hub.tenxcloud.com/)
 
-[DaoCloud](https://www.daocloud.io/mirror#accelerator-doc)
+[DaoCloud](https://hub.daocloud.io/)
 
-Hub · DaoCloud
-https://hub.daocloud.io/
 
 ## 配置 Docker 镜像加速
 
@@ -58,7 +56,7 @@ vim /usr/lib/systemd/system/docker.service
 ExecStart=/usr/bin/dockerd --registry-mirror=<your accelerate address>
 ```
 
-以上操作后重启一下 Docker
+**以上操作后重启一下 Docker**
 
 ``` shell
 sudo systemctl daemon-reload
@@ -80,6 +78,3 @@ https://www.cnblogs.com/atuotuo/p/6264800.html
 
 DaoCloud – 企业级云计算领域的创新领导者
 https://www.daocloud.io/mirror#accelerator-doc
-
-yum install python python-pip -y
-pip install docker
