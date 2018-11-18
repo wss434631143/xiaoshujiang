@@ -110,6 +110,9 @@ Server: Docker Engine - Community
 
 ## 参考资料
 
+Docker 中国
+http://docker-cn.com/
+
 阿里巴巴开源镜像站
 https://opsx.alibaba.com/mirror?lang=zh-CN
 
