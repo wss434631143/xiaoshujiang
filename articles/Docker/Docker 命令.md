@@ -35,7 +35,9 @@ docker image pull 子命令：
 ``` shell
 docker image ls
 ```
-ls 
+docker image ls
+-a, --all：显示所有镜像
+--no-trunc：不截断输出
 
 ## docker container 命令
 
@@ -47,7 +49,7 @@ docker container ls
 
 docker container 子命令：
 -a, --all：显示所有容器，包括没有在运行的。
---no-trunc：不截断CREATED，显示完整。
+--no-trunc：不截断输出
 
 后台启动容器
 docker container run -d <镜像名或ID> 
