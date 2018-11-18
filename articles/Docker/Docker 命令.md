@@ -124,6 +124,12 @@ docker image load -i <文件名>
 docker image load < <文件名>
 ```
 
+### 根据 Dockerfile 构建出一个镜像
+
+``` shell
+docker image build -t <镜像名>[:标签(往往用来表示版本信息)] <Dockerfile>
+```
+
 ----------
 
 
