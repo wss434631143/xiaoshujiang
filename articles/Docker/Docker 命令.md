@@ -276,7 +276,7 @@ docker container diff <容器名或ID>
 docker container top <容器名或ID>
 ```
 
-### 从容器里面拷贝文件/目录到本地一个路径
+### 从容器里面拷贝文件或目录到本地一个路径
 
 ``` shell
 docker container cp <容器名或ID>:/container_path to_path
