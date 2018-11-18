@@ -15,3 +15,7 @@
 Edge版本每月发布，提供一个月支持。
 Stable版本每季度发布，提供4个月支持。
 你可以通过 [Docker EE](https://store.docker.com/search?offering=enterprise&type=edition) 订阅 延长Stable版本支持以及补丁修复。
+![](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181118/1542537475839.png)
+
+参考资料
+[http://dockone.io/article/2128](http://dockone.io/article/2128)
