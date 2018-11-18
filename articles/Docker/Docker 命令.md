@@ -145,16 +145,38 @@ docker container ls
 ```
 
 docker container ls 子命令：
+
 -a, --all：显示所有容器，包括没有在运行的
+
 -q, --quiet：只显示容器ID
+
 --no-trunc：不截断输出
+
+### 创建一个新的容器
+
+``` shell
+docker container create <镜像名或ID> <命令>
+```
+docker container create 子命令：
+
+--name <容器名>：给容器起个名字
+
+-i, --interactive：表示让容器的标准输入打开
+
+-t, --tty：表示分配一个伪终端
+
+-p, --publish list：将容器的端口发布到主机
+
+--rm：容器退出时自动删除
 
 ### 创建并启动一个新的容器
 
 ``` shell
 docker container run <镜像名或ID> <命令>
 ```
+
 docker container run 子命令：
+
 --name <容器名>：给容器起个名字
 
 -d, --detach：在后台运行容器
