@@ -88,6 +88,17 @@ docker image tag <镜像名> <标签名>
 
 ``` shell
 docker image history <镜像名>
+
+### 保存镜像
+
+``` shell
+docker image save <镜像名> -o <文件名>
+```
+
+### 加载镜像
+
+``` shell
+docker image load -i <文件名>
 ```
 
 ----------
