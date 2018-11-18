@@ -19,7 +19,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
 - OpenResty 缓存机制。
 
 **Nginx+Lua架构思维导图：**
-![Nginx+Lua架构思维导图](http://pb4ob7u50.bkt.clouddn.com/xiaoshujiang/2018715/1531669657600.png)
+![Nginx+Lua架构思维导图](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181118/1542535222267.png)
 
 ## 二.关闭SELinux
 
