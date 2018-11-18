@@ -21,6 +21,14 @@
 ### 设置图床
 - 小书匠上点击"绑定"->"githubimg"->"图床服务"->"+"
 ![1](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181118/1542530043611.png)
-- 
+- 输入 github token相关信息
+
+``` html
+图床服务->githubimg
+请输入一个自定义名称：github图床
+请输入一个有效的token值：上面生成的token复制过来
+仓库名称：xiaoshujiang
+文件名称生成规则：/img/{{year}}{{month}}{{date}}/{{filename}}
+```
 
 ![4](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181118/1542530088593.png)
