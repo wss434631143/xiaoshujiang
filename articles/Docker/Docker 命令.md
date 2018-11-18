@@ -262,7 +262,9 @@ docker container rm 子命令：
 docker container logs <容器名或ID>
 ```
 
-### 列出一个容器里面被改变的文件或者目录，list列表会显示出三种事件，A 增加的，D 删除的，C 被改变的
+### 列出一个容器里面被改变的文件或者目录
+
+list列表会显示出三种事件，A 增加的，D 删除的，C 被改变的
 
 ``` shell
 docker container diff <容器名或ID>
