@@ -59,8 +59,12 @@ ExecStart=/usr/bin/dockerd --registry-mirror=<your accelerate address>
 ```
 
 以上操作后重启一下docker
+
+``` shell
 sudo systemctl daemon-reload
 sudo systemctl restart docker
+```
+
  
 
 ## 参考资料
