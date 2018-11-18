@@ -24,7 +24,20 @@ docker search <镜像名>
 ```
 
 
+----------
+
+
 ## docker image 命令
+
+### 查看本地镜像
+
+``` shell
+docker image ls
+```
+docker image ls
+-a, --all：显示所有镜像
+-q, --quiet：只显示镜像ID
+--no-trunc：不截断输出
 
 
 ### 下载镜像
@@ -42,15 +55,18 @@ docker image pull 子命令：
 
 -a,--all-tags=true|false：是否获取仓库中所有版本镜像，默认为否。
 
-
-### 查看本地镜像
+### 删除一个或多个镜像
 
 ``` shell
-docker image ls
+# 删除一个镜像
+docker image rm <镜像 ID>
+# 删除多个镜像(中间用空格隔开)
+docker image rm <镜像 ID> <镜像 ID> <...>
 ```
-docker image ls
--a, --all：显示所有镜像
---no-trunc：不截断输出
+
+
+----------
+
 
 ## docker container 命令
 
