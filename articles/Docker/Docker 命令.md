@@ -123,7 +123,7 @@ docker container run 子命令：
 
 ``` shell
 # 示例
-docker container run -d -it -p 8080:8080 tomcat
+docker container run --name mytomcat -d -it -p 8080:8080 tomcat
 ```
 
 ### 进入运行中的容器
@@ -169,6 +169,11 @@ docker container rm <容器名或ID> <容器名或ID> <...>
 docker container rm $(docker container ls -a -q)
 ```
 
+### 从一个容器中取日志
+
+``` shell
+docker container logs <容器名或ID>
+```
 
 ## 参考资料
 
