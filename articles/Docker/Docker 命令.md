@@ -71,7 +71,7 @@ docker image rm <镜像 ID>
 # 删除多个镜像(中间用空格隔开)
 docker image rm <镜像 ID> <镜像 ID> <...>
 
-# 批量删除本机所有镜像
+# 批量删除本地所有镜像
 docker image rm $(docker image ls -a -q)
 ```
 
@@ -81,13 +81,13 @@ docker image rm $(docker image ls -a -q)
 
 ## docker container 命令
 
-### 查看容器，默认只显示运行中的容器
+### 查看本地容器
 
 ``` shell
 docker container ls
 ```
 
-docker container 子命令：
+docker container ls子命令：
 -a, --all：显示所有容器，包括没有在运行的。
 --no-trunc：不截断输出
 
