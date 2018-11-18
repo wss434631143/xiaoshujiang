@@ -66,9 +66,9 @@ sudo yum -y install docker-ce
 # sudo yum -y install docker-ce-[VERSION]
 ```
 
-## 启动 Docker 服务
+## 开启 Docker 服务
 
-启动Docker服务
+启动 Docker 服务
 
 ``` shell
 systemctl start docker.service 
@@ -81,6 +81,30 @@ service docker start
 
 ``` shell
 systemctl enable docker.service
+```
+
+## 安装校验
+
+``` shell
+[root@localhost ~]# docker version
+Client:
+ Version:           18.09.0
+ API version:       1.39
+ Go version:        go1.10.4
+ Git commit:        4d60db4
+ Built:             Wed Nov  7 00:48:22 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          18.09.0
+  API version:      1.39 (minimum version 1.12)
+  Go version:       go1.10.4
+  Git commit:       4d60db4
+  Built:            Wed Nov  7 00:19:08 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
 ```
 
 
