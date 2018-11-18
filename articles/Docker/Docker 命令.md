@@ -99,6 +99,8 @@ docker image save <镜像名> -o <文件名>
 
 ``` shell
 docker image load -i <文件名>
+# 或者
+docker image load < <文件名>
 ```
 
 ----------
