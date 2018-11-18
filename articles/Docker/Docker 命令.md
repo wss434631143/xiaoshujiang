@@ -250,7 +250,7 @@ docker container start <容器名或ID>
 docker container start <容器名或ID> <容器名或ID> <...>
 ```
 docker container start 子命令：
--a, --attach：Attach STDOUT/STDERR and forward signals
+-a, --attach：附加标准输出和标准错误
 -i, --interactive：Attach container's STDIN
 
 ### 重启一个或多个容器
