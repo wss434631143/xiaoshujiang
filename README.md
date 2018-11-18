@@ -34,4 +34,5 @@
 
 ### 设置数据存储
 - 绑定->数据存储->github
+
 ![1](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181118/1542532276971.pn)
