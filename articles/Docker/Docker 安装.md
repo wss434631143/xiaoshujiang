@@ -3,7 +3,7 @@ title: Docker 安装
 weblog_mt_keywords: "docker"
 ---
 
-## 安装Docker 要求
+## 安装 Docker 要求
 Docker 要求 CentOS 系统的内核版本高于 3.10 且是64位操作系统
 通过 uname -r 命令查看你当前的内核版本
 
@@ -11,8 +11,8 @@ Docker 要求 CentOS 系统的内核版本高于 3.10 且是64位操作系统
 uname -r
 ```
 
-## 脚本安装Docker
-运行Docker安装脚本
+## 脚本安装 Docker
+运行 Docker 安装脚本
 
 ``` shell
 curl -fsSL https://get.docker.com/ | sh 
@@ -36,7 +36,7 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 # 使用默认CentOS-Extras 软件源安装docker
 yum install -y docker
 ```
-- 使用Docker 官方yum源安装
+- 使用 Docker 官方yum源安装
 **此处使用的是阿里云的yum源（和官方保持同步的，碎度快），推荐使用**
 
 ``` shell
@@ -65,13 +65,13 @@ sudo yum -y install docker-ce
 # sudo yum -y install docker-ce-[VERSION]
 ```
 
-## 启动Docker服务
+## 启动 Docker 服务
 
 启动Docker服务
 systemctl start docker.service 或者 service docker start
 
 
-设置Docker服务开机自启
+设置 Docker 服务开机自启
 systemctl enable docker.service
 
 
