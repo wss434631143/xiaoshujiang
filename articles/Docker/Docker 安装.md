@@ -11,41 +11,69 @@ Docker 要求 CentOS 系统的内核版本高于 3.10 且是64位操作系统
 uname -r
 ```
 
-## 使用 yum 安装
-
-添加Docker的yum源
-tee /etc/yum.repos.d/docker.repo <<-'EOF'
-[dockerrepo]
-name=Docker Repository
-baseurl=https://yum.dockerproject.org/repo/main/centos/$releasever/
-enabled=1
-gpgcheck=1
-gpgkey=https://yum.dockerproject.org/gpg
-EOF
-
-对于CentOS 7 系统，Docker 软件包和依赖包已经包含在默认的 CentOS-Extras 软件源里，可以直接yum命令安装。
-
-更新yum源
-yum update
-
-yum安装
-yum install -y docker-engine
-    
-
 ## 脚本安装Docker（此方法安装的版本比较新）
 运行Docker安装脚本
+
+``` shell
 curl -fsSL https://get.docker.com/ | sh 或者
 wget -qO- https://get.docker.com/ | sh
+```
 
+推荐使用阿里云的安装脚本，速度快
+
+``` shell
+curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+```
+
+
+## 使用 yum 安装
+
+-使用 CentOS-Extras yum源安装
+对于CentOS 7 系统，Docker 软件包和依赖包已经包含在默认的 CentOS-Extras 软件源里，可以直接yum命令安装,但是版本较低
+
+``` shell
+# 使用默认CentOS-Extras 软件源安装docker
+yum install -y docker
+```
+- 使用Docker 阿里云yum源安装
+
+``` shell
+# step 1: 安装必要的一些系统工具
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+# Step 2: 添加软件源信息
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+# Step 3: 更新并安装 Docker-CE
+sudo yum makecache fast
+sudo yum -y install docker-ce
+# 注意：
+# 官方软件源默认启用了最新的软件，您可以通过编辑软件源的方式获取各个版本的软件包。例如官方并没有将测试版本的软件源置为可用，你可以通过以下方式开启。同理可以开启各种测试版本等。
+# vim /etc/yum.repos.d/docker-ce.repo
+#   将 [docker-ce-test] 下方的 enabled=0 修改为 enabled=1
+#
+# 安装指定版本的Docker-CE:
+# Step 1: 查找Docker-CE的版本:
+# yum list docker-ce.x86_64 --showduplicates | sort -r
+#   Loading mirror speeds from cached hostfile
+#   Loaded plugins: branch, fastestmirror, langpacks
+#   docker-ce.x86_64            17.03.1.ce-1.el7.centos            docker-ce-stable
+#   docker-ce.x86_64            17.03.1.ce-1.el7.centos            @docker-ce-stable
+#   docker-ce.x86_64            17.03.0.ce-1.el7.centos            docker-ce-stable
+#   Available Packages
+# Step2 : 安装指定版本的Docker-CE: (VERSION 例如上面的 17.03.0.ce.1-1.el7.centos)
+# sudo yum -y install docker-ce-[VERSION]
+```
 
 ## 启动Docker服务
 
 启动Docker服务
-systemctl start docker.service
+systemctl start docker.service 或者 service docker start
+
 
 设置Docker服务开机自启
 systemctl enable docker.service
 
+
+## 参考资料
 
 Centos7安装Docker Engine - CarsonFan - 博客园
 https://www.cnblogs.com/xmzncc/p/6059554.html
