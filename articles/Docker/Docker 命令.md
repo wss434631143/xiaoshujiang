@@ -75,6 +75,11 @@ docker image rm <镜像 ID> <镜像 ID> <...>
 docker image rm $(docker image ls -a -q)
 ```
 
+给镜像打上标签
+
+``` shell
+docker image tag <镜像名> <标签名>
+```
 
 ----------
 
@@ -88,17 +93,13 @@ docker container ls
 ```
 
 docker container ls子命令：
--a, --all：显示所有容器，包括没有在运行的。
+-a, --all：显示所有容器，包括没有在运行的
+-q, --quiet：只显示容器ID
 --no-trunc：不截断输出
 
 后台启动容器
 docker container run -d <镜像名或ID> 
 
-给镜像打上标签
-docker tag <镜像名> <标签名>
-
-删除镜像
-docker rmi <镜像名>
 
 
 
@@ -115,10 +116,6 @@ docker run -d -it -p 8080:8080 tomcat
 -t:表示分配一个伪终端
 
 
-查看容器运行状态
-docker ps
-查看所有容器状态（包括已经停止的）
-docker ps -a
 
 停止容器
 docker stop <CONTAINER ID>
