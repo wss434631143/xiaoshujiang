@@ -18,16 +18,17 @@ docker search <镜像名>
 通常情况下，描述一个镜像需要包括“名称+标签”信息，如果不指定标签信息，默认会选择latest标签，这会下载仓库中最新版本的镜像。更严格地讲，镜像的仓库名称中还应该添加仓库地址（即registry,注册服务器）作为前缀，只是我们默认使用的是Docker Hub服务，该前缀可以忽略。
 
 ``` shell
-docker pull <镜像名>[:标签(往往用来表示版本信息)]
+docker image pull <镜像名>[:标签(往往用来表示版本信息)]
 # 例如：
-docker pull ubuntu:14.04
-docker pull hub.c.163.com/public/ubuntu:14.04
+docker image pull ubuntu:14.04
+docker image pull hub.c.163.com/public/ubuntu:14.04
 ```
 
 pull子命令： -a,--all-tags=true|false：是否获取仓库中所有版本镜像，默认为否。
 
 
-查看本地镜像
+### 查看本地镜像
+
 docker images
 
 后台启动容器
