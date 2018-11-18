@@ -81,6 +81,12 @@ docker image rm $(docker image ls -a -q)
 docker image tag <镜像名> <标签名>
 ```
 
+### 显示一个镜像的历史
+
+``` shell
+docker image history <镜像名>
+```
+
 ----------
 
 
@@ -97,10 +103,10 @@ docker container ls 子命令：
 -q, --quiet：只显示容器ID
 --no-trunc：不截断输出
 
-### 启动容器
+### 创建并启动一个新的容器
 
 ``` shell
-docker container run <镜像名或ID> 
+docker container run <镜像名或ID> <命令>
 ```
 docker container run 子命令：
 --name <容器名>：给容器起个名字
@@ -123,14 +129,32 @@ docker container run -d -it -p 8080:8080 tomcat
 ### 进入运行中的容器
 
 ``` shell
-docker container exec -it bd303844cfb3 /bin/bash
+docker container exec -it <容器名或ID> /bin/bash
 ```
 
-### 停止容器
+### 停止一个或多个运行中的容器
 
 ``` shell
+# 停止一个运行中的容器
 docker container stop <容器名或ID>
+
+# 停止多个运行中的容器(中间用空格隔开)
+docker container stop <容器名或ID> <容器名或ID> <...>
 ```
+
+### 启动一个或多个停止的容器
+
+``` shell
+# 启动一个停止的容器
+docker container start <容器名或ID>
+
+# 启动多个停止的容器(中间用空格隔开)
+docker container start <容器名或ID> <容器名或ID> <...>
+```
+docker container start 子命令：
+-a, --attach：Attach STDOUT/STDERR and forward signals
+-i, --interactive：Attach container's STDIN
+
 
 ### 删除一个或多个容器
 
