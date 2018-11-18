@@ -69,11 +69,19 @@ sudo yum -y install docker-ce
 ## 启动 Docker 服务
 
 启动Docker服务
-systemctl start docker.service 或者 service docker start
+
+``` shell
+systemctl start docker.service 
+# 或者 
+service docker start
+```
 
 
 设置 Docker 服务开机自启
+
+``` shell
 systemctl enable docker.service
+```
 
 
 ## 参考资料
