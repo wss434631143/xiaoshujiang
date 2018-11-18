@@ -15,15 +15,26 @@ weblog_mt_keywords: "Docker"
 
 [DaoCloud](https://www.daocloud.io/mirror#accelerator-doc)
 
+Hub · DaoCloud
+https://hub.daocloud.io/
+
+## 可设置的 Docker 镜像加速站点
+
+https://registry.docker-cn.com
+http://hub-mirror.c.163.com
+http://{your_id}.m.daocloud.io
+https://{your_id}.mirror.aliyuncs.com
+
 
 curl -sSL https://raw.githubusercontent.com/wss434631143/xiaoshujiang/master/articles/Docker/shell/set_mirror.sh | sh -s http://hub-mirror.c.163.com
-curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://c45029c5.m.daocloud.io
+
+curl -sSL https://raw.githubusercontent.com/wss434631143/xiaoshujiang/master/articles/Docker/shell/set_mirror.sh | sh -s http://c45029c5.m.daocloud.io
+
 
 该脚本可以将 --registry-mirror 加入到你的 Docker 配置文件 /etc/docker/daemon.json 中。适用于 Ubuntu14.04、Debian、CentOS6 、CentOS7、Fedora、Arch Linux、openSUSE Leap 42.1，其他版本可能有细微不同。更多详情请访问文档。
 
 
 ### 通过修改启动脚本修改 Docker 仓库
-
 
 ``` shell
 # 直接修改 /usr/lib/systemd/system/docker.service 启动脚本
@@ -46,3 +57,7 @@ https://github.com/silenceshell/docker_mirror
 
 Docker - 配置国内加速器加速镜像下载。 - TonyZhang24 - 博客园
 https://www.cnblogs.com/atuotuo/p/6264800.html
+
+
+yum install python python-pip -y
+pip install docker
