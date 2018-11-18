@@ -36,9 +36,12 @@ docker login <server>
 # 示例：
 docker login daocloud.io
 ```
+
 docker login 子命令：
 -p, --password：密码
 -u, --username：用户名
+
+
 ----------
 
 
