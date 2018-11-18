@@ -168,11 +168,25 @@ docker container rm <容器名或ID> <容器名或ID> <...>
 # 批量删除本地所有容器
 docker container rm $(docker container ls -a -q)
 ```
+docker container rm 子命令：
+-f, --force：强制删除
 
 ### 从一个容器中取日志
 
 ``` shell
 docker container logs <容器名或ID>
+```
+
+### 列出一个容器里面被改变的文件或者目录，list列表会显示出三种事件，A 增加的，D 删除的，C 被改变的
+
+``` shell
+docker container diff <容器名或ID>
+```
+
+### 显示一个运行的容器里面的进程信息
+
+``` shell
+docker container top <容器名或ID>
 ```
 
 ## 参考资料
