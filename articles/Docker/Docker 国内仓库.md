@@ -78,3 +78,6 @@ https://www.cnblogs.com/atuotuo/p/6264800.html
 
 DaoCloud – 企业级云计算领域的创新领导者
 https://www.daocloud.io/mirror#accelerator-doc
+
+tee命令_Linux tee 命令用法详解：把数据重定向到给定文件和屏幕上
+http://man.linuxde.net/tee
