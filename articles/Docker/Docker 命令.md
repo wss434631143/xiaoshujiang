@@ -145,6 +145,36 @@ docker container stop <容器名或ID>
 docker container stop <容器名或ID> <容器名或ID> <...>
 ```
 
+### 杀死一个或多个运行中的容器
+
+``` shell
+# 停止一个运行中的容器
+docker container kill <容器名或ID>
+
+# 停止多个运行中的容器(中间用空格隔开)
+docker container kill <容器名或ID> <容器名或ID> <...>
+```
+
+### 暂停一个或多个容器内的所有进程
+
+``` shell
+# 停止一个运行中的容器
+docker container pause <容器名或ID>
+
+# 停止多个运行中的容器(中间用空格隔开)
+docker container pause <容器名或ID> <容器名或ID> <...>
+```
+
+### 取消暂停一个或多个容器内的所有进程
+
+``` shell
+# 停止一个运行中的容器
+docker container unpause <容器名或ID>
+
+# 停止多个运行中的容器(中间用空格隔开)
+docker container unpause <容器名或ID> <容器名或ID> <...>
+```
+
 ### 启动一个或多个停止的容器
 
 ``` shell
@@ -158,6 +188,15 @@ docker container start 子命令：
 -a, --attach：Attach STDOUT/STDERR and forward signals
 -i, --interactive：Attach container's STDIN
 
+### 重启一个或多个容器
+
+``` shell
+# 重启一个的容器
+docker container restart <容器名或ID>
+
+# 重启多个容器(中间用空格隔开)
+docker container restart <容器名或ID> <容器名或ID> <...>
+```
 
 ### 删除一个或多个容器
 
@@ -190,6 +229,12 @@ docker container diff <容器名或ID>
 
 ``` shell
 docker container top <容器名或ID>
+```
+
+### 从容器里面拷贝文件/目录到本地一个路径
+
+``` shell
+docker container cp <容器名或ID>:/container_path to_path
 ```
 
 ## 参考资料
