@@ -251,7 +251,7 @@ docker container start <容器名或ID> <容器名或ID> <...>
 ```
 docker container start 子命令：
 -a, --attach：附加标准输出和标准错误
--i, --interactive：Attach container's STDIN
+-i, --interactive：表示让容器的标准输入打开
 
 ### 重启一个或多个容器
 
