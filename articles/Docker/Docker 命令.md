@@ -25,7 +25,9 @@ docker image pull ubuntu:14.04
 docker image pull hub.c.163.com/public/ubuntu:14.04
 ```
 
-pull子命令： -a,--all-tags=true|false：是否获取仓库中所有版本镜像，默认为否。
+docker image pull 子命令： 
+
+-a,--all-tags=true|false：是否获取仓库中所有版本镜像，默认为否。
 
 
 ### 查看本地镜像
@@ -33,13 +35,18 @@ pull子命令： -a,--all-tags=true|false：是否获取仓库中所有版本镜
 ``` shell
 docker image ls
 ```
-
+ls 
 
 ## docker container 命令
+
+### 查看容器，默认只显示运行中的容器
 
 ``` shell
 docker container ls
 ```
+
+docker container 子命令：
+-a, --all：显示所有容器，包括没有在运行的。
 
 后台启动容器
 docker container run -d <镜像名或ID> 
