@@ -113,26 +113,28 @@ docker container run 子命令：
 
 -p, --publish list：将容器的端口发布到主机
 
---rm
+--rm：容器退出时自动删除
 
 ``` shell
 # 示例
-docker run -d -it -p 8080:8080 tomcat
+docker container run -d -it -p 8080:8080 tomcat
 ```
 
--d:表示后台运行
--i:表示让容器的标准输入打开
--t:表示分配一个伪终端
+### 进入运行中的容器
+
+``` shell
+docker container exec -it bd303844cfb3 /bin/bash
+```
+
+### 停止容器
+
+``` shell
+docker stop <容器名或ID>
+```
 
 
 
-停止容器
-docker stop <CONTAINER ID>
-
-进入容器
-docker exec -it bd303844cfb3 /bin/bash
-docker  nsenter -t docker inspect --format "{{ .State.Pid }}" <docker_name or docker_CONTAINER ID> -m -u -i -n -p
-
+## 参考资料
 
 docker简单使用 - CSDN博客
 https://blog.csdn.net/tongzhenggang/article/details/54288351
