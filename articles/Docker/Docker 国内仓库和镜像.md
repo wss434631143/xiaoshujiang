@@ -1,6 +1,6 @@
 ---
 title: Docker 国内仓库和镜像
-weblog_mt_keywords: "Docker"
+weblog_mt_keywords: "docker"
 ---
 
 > 由于网络原因，我们在pull Image 的时候，从Docker Hub上下载会很慢。。。所以，国内的Docker爱好者们就添加了一些国内的镜像（mirror）,方便大家使用。
