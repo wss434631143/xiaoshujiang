@@ -20,7 +20,7 @@ curl -fsSL https://get.docker.com/ | sh
 wget -qO- https://get.docker.com/ | sh
 ```
 
-推荐使用阿里云的安装脚本，速度快
+**推荐使用阿里云的安装脚本，速度快**
 
 ``` shell
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
