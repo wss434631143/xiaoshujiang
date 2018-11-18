@@ -85,7 +85,7 @@ systemctl enable docker.service
 
 ## 安装校验
 
-``` html
+``` shell
 [root@localhost ~]# docker version
 Client:
  Version:           18.09.0
