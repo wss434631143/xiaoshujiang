@@ -2,7 +2,7 @@
 
 - Docker Engine改为Docker CE（社区版） 
 
-它包含了CLI客户端、后台进程/服务以及API。用户像以前以同样的方式获取。
+    它包含了CLI客户端、后台进程/服务以及API。用户像以前以同样的方式获取。
 
 - Docker Data Center改为Docker EE（企业版） 
 
