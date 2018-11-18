@@ -75,6 +75,9 @@ systemctl enable docker.service
 
 ## 参考资料
 
+Docker CE 镜像源站-博客-云栖社区-阿里云
+https://yq.aliyun.com/articles/110806
+
 Centos7安装Docker Engine - CarsonFan - 博客园
 https://www.cnblogs.com/xmzncc/p/6059554.html
 
