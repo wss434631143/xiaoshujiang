@@ -129,9 +129,21 @@ docker container exec -it bd303844cfb3 /bin/bash
 ### 停止容器
 
 ``` shell
-docker stop <容器名或ID>
+docker container stop <容器名或ID>
 ```
 
+### 删除一个或多个容器
+
+``` shell
+# 删除一个容器
+docker container rm <容器名或ID>
+
+# 删除多个容器(中间用空格隔开)
+docker container rm <容器名或ID> <容器名或ID> <...>
+
+# 批量删除本地所有容器
+docker container rm $(docker container ls -a -q)
+```
 
 
 ## 参考资料
