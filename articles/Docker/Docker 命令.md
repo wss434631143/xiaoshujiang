@@ -17,7 +17,7 @@ docker search <镜像名>
 docker version
 ```
 
-### 显示 docker 详细信息
+### 显示 docker 系统的信息
 
 ``` shell
 docker info
