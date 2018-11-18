@@ -18,33 +18,46 @@ weblog_mt_keywords: "Docker"
 Hub · DaoCloud
 https://hub.daocloud.io/
 
-## 可设置的 Docker 镜像加速站点
+## Docker 镜像加速站点
 
-https://registry.docker-cn.com
-http://hub-mirror.c.163.com
-http://{your_id}.m.daocloud.io
-https://{your_id}.mirror.aliyuncs.com
+- https://registry.docker-cn.com
 
+- http://hub-mirror.c.163.com
 
-curl -sSL https://raw.githubusercontent.com/wss434631143/xiaoshujiang/master/articles/Docker/shell/set_mirror.sh | sh -s http://hub-mirror.c.163.com
+- http://{your_id}.m.daocloud.io
 
-curl -sSL https://raw.githubusercontent.com/wss434631143/xiaoshujiang/master/articles/Docker/shell/set_mirror.sh | sh -s http://c45029c5.m.daocloud.io
+- https://{your_id}.mirror.aliyuncs.com
 
+### 使用命令来配置加速站点
+
+``` shell
+mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["<your accelerate address>"]
+}
+```
+
+### 使用脚本来配置加速站点
 
 该脚本可以将 --registry-mirror 加入到你的 Docker 配置文件 /etc/docker/daemon.json 中。适用于 Ubuntu14.04、Debian、CentOS6 、CentOS7、Fedora、Arch Linux、openSUSE Leap 42.1，其他版本可能有细微不同。更多详情请访问文档。
 
+``` shell
+curl -sSL https://raw.githubusercontent.com/wss434631143/xiaoshujiang/master/articles/Docker/shell/set_mirror.sh | sh -s <your accelerate address>
+```
 
-### 通过修改启动脚本修改 Docker 仓库
+### 通过修改启动脚本配置加速站点
 
 ``` shell
 # 直接修改 /usr/lib/systemd/system/docker.service 启动脚本
 vim /usr/lib/systemd/system/docker.service 
 # 在dockerd后面加参数
 ExecStart=/usr/bin/dockerd --registry-mirror=<your accelerate address>
-# 以上操作后重启一下docker
-systemctl restart docker 
 ```
 
+以上操作后重启一下docker
+sudo systemctl daemon-reload
+sudo systemctl restart docker
  
 
 ## 参考资料
