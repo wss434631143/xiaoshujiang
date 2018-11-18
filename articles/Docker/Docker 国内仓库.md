@@ -18,15 +18,17 @@ weblog_mt_keywords: "Docker"
 Hub · DaoCloud
 https://hub.daocloud.io/
 
-## Docker 镜像加速站点
+## 配置 Docker 镜像加速
 
-- https://registry.docker-cn.com
+### 国内加速站点
 
-- http://hub-mirror.c.163.com
+https://registry.docker-cn.com
 
-- http://{your_id}.m.daocloud.io
+http://hub-mirror.c.163.com
 
-- https://{your_id}.mirror.aliyuncs.com
+http://{your_id}.m.daocloud.io
+
+https://{your_id}.mirror.aliyuncs.com
 
 ### 使用命令来配置加速站点
 
@@ -71,6 +73,8 @@ https://github.com/silenceshell/docker_mirror
 Docker - 配置国内加速器加速镜像下载。 - TonyZhang24 - 博客园
 https://www.cnblogs.com/atuotuo/p/6264800.html
 
+DaoCloud – 企业级云计算领域的创新领导者
+https://www.daocloud.io/mirror#accelerator-doc
 
 yum install python python-pip -y
 pip install docker
