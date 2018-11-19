@@ -22,7 +22,7 @@ rewrite regex replacement [flag];
 | 指令 | 正则表达式 | 重写（或跳转）的 URL 地址 | 标记符号 |
 
 regex 常用正则表达式字符：
-![regex 常用正则表达式字符](http://pb4ob7u50.bkt.clouddn.com/xiaoshujiang/2018724/1532414035037.png)
+![regex 常用正则表达式字符](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542620548792.png)
 
 flag 标记符号：
 | flag 标记符号| 说明|
@@ -113,9 +113,9 @@ server {
 实验结果：
 
 访问前的地址
-![访问前的地址](http://pb4ob7u50.bkt.clouddn.com/xiaoshujiang/2018724/1532415995834.png)
+![访问前的地址](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542620615107.png)
 访问后的地址
-![访问后的地址](http://pb4ob7u50.bkt.clouddn.com/xiaoshujiang/2018724/1532415952051.png)
+![访问后的地址](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542620651923.png)
 
 访问 http://abc.com/index.html 时跳转到 http://www.abc.com/index.html ，浏览器的地址栏变成了 http://www.abc.com/index.html
 
@@ -156,9 +156,9 @@ server {
 实验结果：
 
 访问前的地址
-![访问前的地址](http://pb4ob7u50.bkt.clouddn.com/xiaoshujiang/2018724/1532422569395.png)
+![访问前的地址](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542620700354.png)
 访问后的地址
-![访问后的地址](http://pb4ob7u50.bkt.clouddn.com/xiaoshujiang/2018724/1532422632041.png)
+![访问后的地址](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542620737574.png)
 
 访问 http://blog.abc.com/index.html 时跳转到 http://www.abc.com/blog/index.html ，浏览器的地址栏变成了 http://www.abc.com/blog/index.html
 
