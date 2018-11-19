@@ -3,6 +3,8 @@ title: Docker 版本
 weblog_mt_keywords: "docker"
 ---
 
+### Docker 版本
+
 > 长话短说：现在Docker改为基于YY.MM的版本（像Ubuntu），用户可以选择Stable（发布较慢）或者Edge（发布较快）版本。
 
 - Docker Engine改为Docker CE（社区版） 
@@ -26,6 +28,10 @@ weblog_mt_keywords: "docker"
     你可以通过 [Docker EE](https://store.docker.com/search?offering=enterprise&type=edition) 订阅 延长Stable版本支持以及补丁修复。
     ![](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181118/1542537475839.png)
 
-**参考资料**
+
+----------
+
+
+## 参考资料
 
 [http://dockone.io/article/2128](http://dockone.io/article/2128)
