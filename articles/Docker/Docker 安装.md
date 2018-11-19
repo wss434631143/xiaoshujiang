@@ -2,6 +2,7 @@
 title: Docker 安装 
 weblog_mt_keywords: "docker"
 ---
+
 ## 安装 Docker 要求
 Docker 要求 CentOS 系统的内核版本高于 3.10 且是64位操作系统
 通过 uname -r 命令查看你当前的内核版本
