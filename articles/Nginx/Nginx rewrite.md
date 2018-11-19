@@ -114,6 +114,7 @@ server {
 
 访问前的地址
 ![访问前的地址](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542620615107.png)
+
 访问后的地址
 ![访问后的地址](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542620651923.png)
 
@@ -157,6 +158,7 @@ server {
 
 访问前的地址
 ![访问前的地址](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542620700354.png)
+
 访问后的地址
 ![访问后的地址](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542620737574.png)
 
