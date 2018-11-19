@@ -184,7 +184,11 @@ server {
 
 ## 参考资料
 
-[http://tengine.taobao.org/nginx_docs/cn/docs/http/ngx_http_rewrite_module.html#rewrite](http://tengine.taobao.org/nginx_docs/cn/docs/http/ngx_http_rewrite_module.html#rewrite)
+[http://tengine.taobao.org/nginx_docs/cn/docs/http/ngx_http_rewrite_module.html#rewrite]
+(http://tengine.taobao.org/nginx_docs/cn/docs/http/ngx_http_rewrite_module.html#rewrite)
+
 [https://www.cnblogs.com/fengchi/p/6525021.html](https://www.cnblogs.com/fengchi/p/6525021.html)
+
 [https://www.cnblogs.com/mikeluwen/p/7068279.html](https://www.cnblogs.com/mikeluwen/p/7068279.html)
+
 [https://blog.csdn.net/sunyuhua_keyboard/article/details/78273700](https://blog.csdn.net/sunyuhua_keyboard/article/details/78273700)
