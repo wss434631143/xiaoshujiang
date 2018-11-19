@@ -232,7 +232,7 @@ eof
 ----------
 
 ### 4.显示当前行、显示光标的坐标位置
-![显示当前行、显示光标的坐标位置](http://pb4ob7u50.bkt.clouddn.com/xiaoshujiang/2018715/1531636568835.png)
+![显示当前行、显示光标的坐标位置](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542599069978.png)
 
 ----------
 
