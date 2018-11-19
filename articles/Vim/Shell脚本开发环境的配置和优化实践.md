@@ -433,8 +433,9 @@ exit 从shell回到vim
 | I + # + Esc | 在可视块模式下（Ctrl + v ）, 一次性注释所选的多行，取消注释可用:n1,n2s/#/ /gc |
 | Del | 在可视块模式下（Ctrl + v ），一次性删除所选内容 |
 | r | 在可视块模式下（Ctrl + v ），一次性替换所选内容 |  
-![Vim/Vi 工作模式](http://pb4ob7u50.bkt.clouddn.com/xiaoshujiang/2018725/1532507084578.png)
-![Vim 命令](http://pb4ob7u50.bkt.clouddn.com/xiaoshujiang/2018725/1532507110828.png)
+![Vim/Vi 工作模式](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542595580548.png)
+
+![Vim 命令](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181119/1542595603404.png)
 
 ----------
 
