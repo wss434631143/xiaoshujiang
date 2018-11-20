@@ -15,6 +15,12 @@ weblog_mt_keywords: "docker"
 
 [DaoCloud](https://hub.daocloud.io/)
 
+## 国外 Docker 仓库
+
+[Docker Hub](https://hub.docker.com/)
+
+[Quay](https://quay.io/)
+
 
 ## 配置 Docker 镜像加速
 
