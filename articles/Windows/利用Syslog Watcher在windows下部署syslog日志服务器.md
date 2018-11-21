@@ -117,5 +117,4 @@ SpoolDir  %ROOT%\data
 
 ## 参考资料
 
-利用Syslog Watcher在windows下部署syslog日志服务器 - DWY - 博客园
-https://www.cnblogs.com/meandme/p/9675941.html
+[利用Syslog Watcher在windows下部署syslog日志服务器 ](https://www.cnblogs.com/meandme/p/9675941.html)
