@@ -21,7 +21,6 @@ syslog协议是各种网络设备、服务器支持的网络日志记录标准�
 ![](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181121/1542783995586.png)
 
 - 可自定义监听端口
-
 ![](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181121/1542784023061.png)
 
 ## 安装客户端
