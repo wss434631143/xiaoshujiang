@@ -1,3 +1,8 @@
+---
+title: top 命令 
+weblog_mt_keywords: "Linux命令大全"
+---
+
 **首先介绍top中一些字段的含义：**
 
 **VIRT：virtual memory usage 虚拟内存**1、进程“需要的”虚拟内存大小，包括进程使用的库、代码、数据等
@@ -127,8 +132,7 @@ M:根据驻留内存大小进行排序。
 
 
 **查看多核CPU命令**mpstat -P ALL  和  sar -P ALL 
-
-[![img](http://files.jb51.net/file_images/article/201308/201308230923349.gif)](http://files.jb51.net/file_images/article/201308/201308230923349.gif) 
+![](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872382595.png)
 
 **说明：**sar -P ALL > aaa.txt   重定向输出内容到文件 aaa.txt
 
@@ -137,8 +141,7 @@ top命令经常用来监控[Linux](http://lib.csdn.net/base/linux)的系统状�
 本文通过一个运行中的WEB服务器的top监控截图，讲述top视图中的各种数据的含义，还包括视图中各进程（任务）的字段的排序。
 
 # **输入top命令**
-
-![1542871863742](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1542871863742.png)
+![](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872489936.png)
 
 ### 1.1 系统运行时间和平均负载：
 
@@ -278,7 +281,7 @@ COMMAND：运行进程所使用的命令。进程名称（命令名/命令行）
 
 可以用h或？显示交互命令的帮助菜单。
 
-![1542871999242](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1542871999242.png)
+![](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872602259.png)
 
 ### 2.2 ‘<ENTER>’ 或者 ‘<SPACE>’: 刷新显示
 
@@ -286,7 +289,7 @@ top命令默认在一个特定间隔(3秒)后刷新显示。要手动刷新，�
 
 **多U多核CPU监控**在top基本视图中，按键盘数字“1”，可监控每个逻辑CPU的状况：
 
-[![top视图 02](http://files.jb51.net/file_images/article/201308/2013082309233411.jpg)](http://files.jb51.net/file_images/article/201308/2013082309233411.jpg)
+[![top视图 02](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872647375.jpg)](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872712833.jpg)
 
 **top视图 02**
 
@@ -296,7 +299,7 @@ top命令默认在一个特定间隔(3秒)后刷新显示。要手动刷新，�
 
 \1. 敲击键盘“b”（打开/关闭加亮效果），top的视图变化如下：
 
-[![top视图 03](http://files.jb51.net/file_images/article/201308/2013082309233412.jpg)](http://files.jb51.net/file_images/article/201308/2013082309233412.jpg)
+[![top视图 03](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872734538.jpg)](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872885789.jpg)
 
 **top视图 03**
 
@@ -304,7 +307,7 @@ top命令默认在一个特定间隔(3秒)后刷新显示。要手动刷新，�
 
 \2. 敲击键盘“x”（打开/关闭排序列的加亮效果），top的视图变化如下：
 
-[![top视图 04](http://files.jb51.net/file_images/article/201308/2013082309233413.jpg)](http://files.jb51.net/file_images/article/201308/2013082309233413.jpg)
+[![top视图 04](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872896726.jpg)](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872917599.jpg)
 
 **top视图 04**
 
@@ -312,7 +315,7 @@ top命令默认在一个特定间隔(3秒)后刷新显示。要手动刷新，�
 
 \3. 通过”shift + >”或”shift + <”可以向右或左改变排序列，下图是按一次”shift + >”的效果图：
 
-[![top视图 05](http://files.jb51.net/file_images/article/201308/2013082309233414.jpg)](http://files.jb51.net/file_images/article/201308/2013082309233414.jpg)
+[![top视图 05](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872930732.jpg)](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872938240.jpg)
 
 **top视图 05**
 
@@ -322,19 +325,19 @@ top命令默认在一个特定间隔(3秒)后刷新显示。要手动刷新，�
 
 \1. 敲击“f”键，top进入另一个视图，在这里可以编排基本视图中的显示字段：
 
-[![top视图 06](http://files.jb51.net/file_images/article/201308/2013082309233415.jpg)](http://files.jb51.net/file_images/article/201308/2013082309233415.jpg)
+[![top视图 06](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872951893.jpg)](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872961252.jpg)
 
 **top视图 06**
 
 这里列出了所有可在top基本视图中显示的进程字段，有”*”并且标注为大写字母的字段是可显示的，没有”*”并且是小写字母的字段是不显示的。如果要在基本视图中显示“CODE”和“DATA”两个字段，可以通过敲击“r”和“s”键：
 
-[![top视图 07](http://files.jb51.net/file_images/article/201308/2013082309233416.jpg)](http://files.jb51.net/file_images/article/201308/2013082309233416.jpg)
+[![top视图 07](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872972771.jpg)](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542872986718.jpg)
 
 **top视图 07**
 
 \2. “回车”返回基本视图，可以看到多了“CODE”和“DATA”两个字段：
 
-[![top视图 08](http://files.jb51.net/file_images/article/201308/2013082309233417.jpg)](http://files.jb51.net/file_images/article/201308/2013082309233417.jpg)
+[![top视图 08](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542873022741.jpg)](https://www.github.com/wss434631143/xiaoshujiang/raw/master/img/20181122/1542873038551.jpg)
 
 top视图 08
 
