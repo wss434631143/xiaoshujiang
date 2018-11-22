@@ -110,6 +110,9 @@ Server: Docker Engine - Community
 
 ## 参考资料
 
+获取适用于 CentOS 的 Docker CE | Docker 中文文档
+https://docs.docker-cn.com/engine/installation/linux/docker-ce/centos/
+
 Docker 中国
 http://docker-cn.com/
 
