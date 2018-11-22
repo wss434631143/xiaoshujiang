@@ -1,5 +1,5 @@
 ---
-title: Docker 命令 
+title: 关于 Docker Hub 上不能注册 Docker ID 的问题 
 weblog_mt_keywords: "docker"
 ---
 
