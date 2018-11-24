@@ -1,3 +1,8 @@
+---
+title: Linux下终端录制工具-asciinema
+weblog_mt_keywords: "Linux"
+---
+
 ## 官网
 
 [https://asciinema.org/](https://asciinema.org/)
