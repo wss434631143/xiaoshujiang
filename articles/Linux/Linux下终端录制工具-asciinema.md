@@ -33,3 +33,9 @@ asciinema rec
 ## 成品展示
 
 [![asciicast](https://asciinema.org/a/4MW0LXH7ebNaTvCI4CwNFjz7A.svg)](https://asciinema.org/a/4MW0LXH7ebNaTvCI4CwNFjz7A)
+
+需要额外注意，并不是只能上传，可以选择保存在本地。
+
+## 	官方文档
+
+[https://asciinema.org/docs/](https://asciinema.org/docs/)
