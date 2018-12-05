@@ -30,9 +30,9 @@ https://registry.docker-cn.com
 
 http://hub-mirror.c.163.com
 
-https://{your_id}.mirror.aliyuncs.com
+https://3laho3y3.mirror.aliyuncs.com
 
-http://{your_id}.m.daocloud.io
+http://f1361db2.m.daocloud.io
 
 
 ### 使用命令来配置加速站点
