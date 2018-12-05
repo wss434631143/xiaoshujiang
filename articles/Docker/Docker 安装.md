@@ -68,6 +68,14 @@ sudo yum -y install docker-ce
 
 ## 开启 Docker 服务
 
+关闭selinux并重启服务器
+
+``` shell
+setenforce 0
+sed -i s#^SELINUX=.*#SELINUX=disabled#g /etc/selinux/config
+reboot
+```
+
 启动 Docker 服务
 
 ``` shell
