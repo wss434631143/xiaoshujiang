@@ -34,6 +34,8 @@ https://3laho3y3.mirror.aliyuncs.com
 
 http://f1361db2.m.daocloud.io
 
+https://mirror.ccs.tencentyun.com
+
 
 ### 使用命令来配置加速站点
 
