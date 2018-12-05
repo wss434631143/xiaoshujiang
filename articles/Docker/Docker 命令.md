@@ -111,8 +111,9 @@ docker image tag <镜像名> <标签名>
 
 ``` shell
 docker image history <镜像名>
+```
 
-### 保存镜像
+###  保存镜像
 
 ``` shell
 docker image save <镜像名> -o <文件名>
